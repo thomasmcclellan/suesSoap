@@ -1,0 +1,8 @@
+.top {
+	display: inline-block;
+	position: relative;
+	float: right;
+	margin-top: 0;
+	padding-top: 0;
+	max-height: 25px;
+}
