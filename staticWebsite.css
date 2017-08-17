@@ -1,7 +1,7 @@
 /*Common elements*/
 body {
 	font-size: 1em;
-	font-family: Ubuntu, Geneva, sans-serif;
+	font-family: Tahoma, serif;
 	background: #c4bbaa; 
 	padding: 0;
 	margin: 0;
@@ -16,6 +16,8 @@ h1 {
 
 h2 {
 	color: green;
+	font-family: Ubuntu, Geneva, sans-serif;
+	font-weight: 600;
 	font-size: 1.5em;
 	margin: 0.5em 0 0.35em 0;
 	padding: 0;
@@ -51,6 +53,7 @@ ol li {
 	vertical-align: text-bottom;
 	background-color: #4c4941;
 	border-radius: 0.25em 0 0 0.25em;
+	min-width: 640px;
 }
 
 .nav ul {
@@ -73,25 +76,29 @@ ol li {
 
 .nav li a:hover {
 	color: #efe8da;
-	font-weight: bold;
-	font-size: 1.25em;
+	font-weight: 300;
+	font-family: Tahoma, serif;
 }
 
 /*Jumbotron*/
 .jumbotron {
+	margin-bottom: .25em;
 	padding: 1em;
 	padding-top: 3em;
 	height: 12em;
-	background-image: url(https://scontent-ort2-1.xx.fbcdn.net/v/t31.0-8/10631182_1659932057614703_2809567229009784120_o.jpg?oh=5e82ab1e3c7b65e2fdda6e019f38f1f4&oe=5A1B5C22);
+	background-image: url(./img/jumbotron.jpg);
 }
 
 .container {
 	margin-top: 2%;
-	margin-right: 72%;
-	padding: 1em;
+	float: left;
+	padding: 10px;
 	border: 0.5em solid #4c4941;
 	border-radius: 0.25em;
 	background-color: #efe8da;
+	position: relative;
+	min-width: 307px;
+
 }
 
 .jumbotron h1 {
@@ -99,23 +106,155 @@ ol li {
 	color: green;
 	font-family: Ubuntu, Geneva, sans-serif;
 	font-weight: 600;
-	margin-bottom: 0;
-	/*text-transform: uppercase;*/
+	margin-bottom: 0.15em;
 }
 
 .jumbotron p {
 	text-align: center;
-	color: #a80000;
-	font-family: Ubuntu, Geneva, sans-serif;
+	color: #c6640d;
+	font-family: Tahoma, serif;
 	font-weight: 300;
 	text-transform: uppercase;
 }
 
 /*Contact*/
-
-/*Main Section*/
-legend {
-	color: green;
+.contact {
+	float: left;
+	border: 0.25em solid #4c4941;
+	border-radius: 0.25em;
+	background-color: #efe8da;
+	margin-left: 1em;
+	position: relative;
+	display: block;
+	width: 11%;
+	padding: 1em;
+	box-shadow: 2px 2px 2px #777;
 }
 
-/*Footer
+legend {
+	color: green;
+	font-family: Ubuntu, Geneva, sans-serif;
+}
+
+/*Main Section*/
+
+
+.main {
+	width: 100%;
+	
+}
+
+.main-body {
+	width: 85%;
+	float: right;
+}
+
+.main-1, .main-2, .main-3, .main-4 {
+	border: 0.25em solid #4c4941;
+	border-radius: 0.25em;
+	background-color: #efe8da;
+	display: inline-block;
+	box-shadow: 2px 2px 2px #777;
+	text-align: center;
+	position: relative;
+	margin: 2em;
+	padding: 1em;
+	float: right;
+
+}
+
+button.accordion {
+	background-color: #eee;
+	color: #444;
+	cursor: pointer;
+	padding: 18px;
+	width: 100%;
+	text-align: left;
+	border: none;
+	outline: none;
+	transition: 0.4s;
+}
+
+button.accordion.active, button.accordion:hover {
+	background-color: #ddd;
+}
+
+div.panel {
+	padding: 0 18px;
+	background-color: white;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+}
+
+.buyButton {
+	padding: .2em .25em;
+	font-size: 24px;
+	text-align: center;
+	cursor: pointer;
+	outline: none;
+	color: white;
+	background-color: green;
+	border: none;
+	border-radius: 15px;
+	box-shadow: 0 9px #4c4941;
+}
+
+.buyButton:hover {
+	background-color: #3e8e41;
+}
+
+.buyButton:active {
+	background-color: #3e8e41;
+	box-shadow: 0 5px #666;
+	transform: translateY(4px);
+}
+
+/*Footer*/
+.footer {
+	background-color: #4c4941;
+	height: 25px;
+	font-family: Tahoma, serif;
+	font-size: 1em;
+	color: #c4bbaa;
+	width: 100%;
+	text-align: center;
+	padding: 1.5em 2em;
+}
+
+.footer ul#menuFooter {
+	display: inline-block;
+	list-style: none;
+	margin: 0 0 0 0.6em;
+	padding: 0;
+}
+
+.footer ul li {
+	display: inline-block;
+	padding: 0 0.7em 0 0;
+	margin: 0;
+}
+
+.footer ul li:before {
+	content: "|";
+	padding-right: 0.7em;
+}
+
+.footer a footer a:visited {
+	color: #c4bbaa;
+	text-decoration: none;
+}
+
+.footer a:hover {
+	color: #efe8da;
+	text-decoration: underline;
+}
+
+.clear {
+	clear: both;
+	font-size: 1%;
+}
+
+
+
+
