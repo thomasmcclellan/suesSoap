@@ -1,8 +1,121 @@
-.top {
-	display: inline-block;
-	position: relative;
-	float: right;
-	margin-top: 0;
-	padding-top: 0;
-	max-height: 25px;
+/*Common elements*/
+body {
+	font-size: 1em;
+	font-family: Ubuntu, Geneva, sans-serif;
+	background: #c4bbaa; 
+	padding: 0;
+	margin: 0;
 }
+
+h1 {
+	color: green;
+	font-size: 2em;
+	margin: 0.5em 0 0.5em 0;
+	padding: 0;
+}
+
+h2 {
+	color: green;
+	font-size: 1.5em;
+	margin: 0.5em 0 0.35em 0;
+	padding: 0;
+}
+
+p {
+	color: #2d1e02;
+	font-size: 1.25em;
+	line-height: 1.4em;
+	margin: 0 0.5em 0.75em 0;
+	padding: 0;
+}
+
+ol {
+	font-size: 1em;
+	margin: 0 0 0 1.0em;
+	padding: 0 0 0 1.0em;
+}
+
+ol li {
+	margin: 0;
+	padding: 0 0 0.2em;
+}
+
+/*Nav Bars*/
+.nav {
+	font-size: 1.15em;
+	letter-spacing: 0.04em;
+	padding: 0.5em 1.25em 0 0;
+	margin: 0 0 1.0em 0;
+	float: right;
+	max-width: 1110px;
+	vertical-align: text-bottom;
+	background-color: #4c4941;
+	border-radius: 0.25em 0 0 0.25em;
+}
+
+.nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.nav li {
+	display: inline-block;
+	margin: 0;
+	vertical-align: text-bottom;
+}
+
+.nav li a, .nav li a:visited {
+	text-decoration: none;
+	color: #c4bbaa;
+	padding: 0.3em 0.6em;
+}
+
+.nav li a:hover {
+	color: #efe8da;
+	font-weight: bold;
+	font-size: 1.25em;
+}
+
+/*Jumbotron*/
+.jumbotron {
+	padding: 1em;
+	padding-top: 3em;
+	height: 12em;
+	background-image: url(https://scontent-ort2-1.xx.fbcdn.net/v/t31.0-8/10631182_1659932057614703_2809567229009784120_o.jpg?oh=5e82ab1e3c7b65e2fdda6e019f38f1f4&oe=5A1B5C22);
+}
+
+.container {
+	margin-top: 2%;
+	margin-right: 72%;
+	padding: 1em;
+	border: 0.5em solid #4c4941;
+	border-radius: 0.25em;
+	background-color: #efe8da;
+}
+
+.jumbotron h1 {
+	text-align: center;
+	color: green;
+	font-family: Ubuntu, Geneva, sans-serif;
+	font-weight: 600;
+	margin-bottom: 0;
+	/*text-transform: uppercase;*/
+}
+
+.jumbotron p {
+	text-align: center;
+	color: #a80000;
+	font-family: Ubuntu, Geneva, sans-serif;
+	font-weight: 300;
+	text-transform: uppercase;
+}
+
+/*Contact*/
+
+/*Main Section*/
+legend {
+	color: green;
+}
+
+/*Footer
