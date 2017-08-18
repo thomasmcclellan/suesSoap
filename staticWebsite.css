@@ -117,36 +117,15 @@ ol li {
 	text-transform: uppercase;
 }
 
-/*Contact*/
-.contact {
-	float: left;
-	border: 0.25em solid #4c4941;
-	border-radius: 0.25em;
-	background-color: #efe8da;
-	margin-left: 1em;
-	position: relative;
-	display: block;
-	width: 11%;
-	padding: 1em;
-	box-shadow: 2px 2px 2px #777;
-}
-
-legend {
-	color: green;
-	font-family: Ubuntu, Geneva, sans-serif;
-}
-
 /*Main Section*/
-
-
 .main {
 	width: 100%;
-	
 }
 
 .main-body {
-	width: 85%;
+	width: 80%;
 	float: right;
+	min-width: 460px;
 }
 
 .main-1, .main-2, .main-3, .main-4 {
@@ -160,6 +139,7 @@ legend {
 	margin: 2em;
 	padding: 1em;
 	float: right;
+	max-width: 350px;
 
 }
 
@@ -208,6 +188,36 @@ div.panel {
 	background-color: #3e8e41;
 	box-shadow: 0 5px #666;
 	transform: translateY(4px);
+}
+
+/*Sidebar*/
+section#sidebar {
+	float: left;
+	margin: 2em;
+	width: 11%;
+	display: block;
+	position: relative;
+}
+
+#logo {
+	border: 0.25em solid #4c4941;
+	border-radius: 0.25em;
+	box-shadow: 2px 2px 2px #777;
+}
+
+.contact {
+	min-width: 156px;
+	border: 0.25em solid #4c4941;
+	border-radius: 0.25em;
+	background-color: #efe8da;
+	padding: 1em;
+	box-shadow: 2px 2px 2px #777;
+	margin-top: 2em;
+}
+
+legend {
+	color: green;
+	font-family: Ubuntu, Geneva, sans-serif;
 }
 
 /*Footer*/
