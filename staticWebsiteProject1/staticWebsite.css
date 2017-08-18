@@ -71,11 +71,12 @@ ol li {
 .nav li a, .nav li a:visited {
 	text-decoration: none;
 	color: #c4bbaa;
-	padding: 0.3em 0.6em;
+	padding: 1em 0.6em 0 0.6em;
 }
 
 .nav li a:hover {
 	color: #efe8da;
+	background-color: #605d52;
 	font-weight: 300;
 	font-family: Tahoma, serif;
 }
@@ -140,28 +141,49 @@ ol li {
 	padding: 1em;
 	float: right;
 	max-width: 350px;
+	min-height: 444px;
 
 }
 
 button.accordion {
-	background-color: #eee;
-	color: #444;
+	background-color: #c4bbaa;
+	color: #c6640d;
 	cursor: pointer;
 	padding: 18px;
 	width: 100%;
-	text-align: left;
+	text-align: center;
+	font-size: 1.25em;
+	font-weight: 500;
+	font-family: Ubuntu, Geneva, sans-serif;
 	border: none;
 	outline: none;
 	transition: 0.4s;
+	margin-bottom: 1em;
+
 }
 
 button.accordion.active, button.accordion:hover {
-	background-color: #ddd;
+	background-color: #4c4941;
+	color: #efe8da;
+}
+
+button.accordion:after {
+	content: '\2795';
+	font-size: 13px;
+	float: right;
+	margin-left: 5px;
+}
+
+button.accordion.active:after {
+	content: "\2796";
 }
 
 div.panel {
 	padding: 0 18px;
-	background-color: white;
+	background-color: #efe8da;
+	color: #4c4941;
+	font-size: 1em;
+	font-family: Tahoma, serif;
 	max-height: 0;
 	overflow: hidden;
 	transition: max-height 0.2s ease-out;
@@ -173,7 +195,9 @@ div.panel {
 	text-align: center;
 	cursor: pointer;
 	outline: none;
-	color: white;
+	width: 5em;
+	color: #efe8da;
+	font-family: Ubuntu, Geneva, sans-serif;
 	background-color: green;
 	border: none;
 	border-radius: 15px;
@@ -222,6 +246,9 @@ legend {
 
 /*Footer*/
 .footer {
+	letter-spacing: 0.04em;
+	padding: 0.5em 1.25em 0 0;
+	margin: 0 0 1.0em 0;
 	background-color: #4c4941;
 	height: 25px;
 	font-family: Tahoma, serif;
@@ -232,6 +259,18 @@ legend {
 	padding: 1.5em 2em;
 }
 
+.footer ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.footer li {
+	display: inline-block;
+	margin: 0;
+	vertical-align: text-bottom;
+}
+
 .footer ul#menuFooter {
 	display: inline-block;
 	list-style: none;
@@ -239,25 +278,24 @@ legend {
 	padding: 0;
 }
 
-.footer ul li {
-	display: inline-block;
-	padding: 0 0.7em 0 0;
-	margin: 0;
+.footer li a, .footer li a:visited {
+	text-decoration: none;
+	color: #c4bbaa;
+	padding: 24px 0.6em 30px 0.6em;
+	margin-right: 0;
+	margin-left: 0;
+}
+
+.footer li a:hover {
+	color: #efe8da;
+	background-color: #605d52;
+	font-weight: 300;
+	font-family: Tahoma, serif;
 }
 
 .footer ul li:before {
 	content: "|";
 	padding-right: 0.7em;
-}
-
-.footer a footer a:visited {
-	color: #c4bbaa;
-	text-decoration: none;
-}
-
-.footer a:hover {
-	color: #efe8da;
-	text-decoration: underline;
 }
 
 .clear {
