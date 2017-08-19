@@ -46,11 +46,10 @@ ol li {
 .nav {
 	font-size: 1.15em;
 	letter-spacing: 0.04em;
-	padding: 0.25em .25em 0 0;
+	padding: 0 .25em 0 0;
 	margin: 0 0 1.0em 0;
 	float: right;
 	max-width: 1110px;
-	vertical-align: text-bottom;
 	background-color: #4c4941;
 	border-radius: 0.25em 0 0 0.25em;
 	min-width: 640px;
@@ -81,6 +80,139 @@ ol li {
 	font-family: serif;
 }
 
+/* Contact Us */
+.contactButton {
+    background-color: #4c4941;
+    color: #c4bbaa;
+    font-size: 1.15em;
+    font-family:serif;
+    vertical-align: text-bottom;
+    padding: 14px 20px;
+    margin: 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.contactButton:hover {
+    color: #efe8da;
+	background-color: #605d52;
+	font-weight: 300;
+}
+
+
+input[type=text], input[type=email] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+input[name=content] {
+	height: 20em;
+}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.4); 
+    padding-top: 60px;
+}
+
+.modal-box {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; 
+    border: 1px solid #888;
+    color: #4c4941;
+    width: 80%;
+    border: 0.25em solid #4c4941;
+	border-radius: 0.25em;
+	background-color: #efe8da;
+}
+
+.modal-box h2 {
+	color: green;
+    font-family: Ubuntu, Geneva, sans-serif;
+}
+
+fieldset {
+	margin-top: 1.5em;
+}
+
+.submitButton {
+	padding: .2em .25em;
+	font-size: 24px;
+	text-align: center;
+	cursor: pointer;
+	outline: none;
+	width: 5em;
+	color: #efe8da;
+	font-family: Ubuntu, Geneva, sans-serif;
+    font-size: 1.25em;
+	background-color: green;
+	border: none;
+	border-radius: 15px;
+	box-shadow: 0 9px #4c4941;
+}
+
+.submitButton:hover {
+	background-color: #3e8e41;
+}
+
+.submitButton:active {
+	background-color: #3e8e41;
+	box-shadow: 0 5px #666;
+	transform: translateY(4px);
+}
+
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #c6640d;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover, .close:focus {
+    color: green;
+    cursor: pointer;
+}
+
+/* Contact Us Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+
 /*Jumbotron*/
 .jumbotron {
 	margin-bottom: .25em;
@@ -92,14 +224,12 @@ ol li {
 
 .container {
 	margin-top: 2%;
-	float: left;
 	padding: 10px;
 	border: 0.5em solid #4c4941;
 	border-radius: 0.25em;
 	background-color: #efe8da;
 	position: relative;
 	min-width: 481px;
-
 }
 
 .containerWords {
@@ -138,9 +268,9 @@ ol li {
 }
 
 .main-body {
-	/*width: 80%;
+	width: 100%;
 	float: right;
-	min-width: 460px;*/
+	min-width: 460px;
 }
 
 .main-1, .main-2, .main-3, .main-4 {
