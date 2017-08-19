@@ -5,21 +5,50 @@
 		<link rel="stylesheet" type="text/css" href="./staticWebsite.css">
 	</head>
 	<body>
-		<div class="nav">
+	<div class="nav">
 			<ul>
 				<li><a target="_blank" href="https://www.facebook.com/NWNaturalSoap/?ref=br_rs"><img src="https://www.facebook.com/images/fb_icon_325x325.png" width="22px" height="22px" alt="Facebook"></a></li>
 				<li><a target="_blank" href="http://www.twitter.com"><img src="http://www.socialflow.com/wp-content/uploads/2016/04/twitter1.png" width="24px" height="24px" alt="Twitter"></a></li>
 				<li><a target="_blank" href="http://www.instagram.com"><img src="http://gse.buffalo.edu/gsefiles/images/NewInstagramLogo.jpg" width="22px" height="22px" alt="Instagram"></a></li>
 				<li><a target="_blank" href="http://www.amazon.com"><img src="http://static.wixstatic.com/media/c9aaf0_5e6f5535c8994457ad3f4fe13e505740.jpg" width="22px" height="22px" alt="Amazon"></a></li>
 				<li><a href="https://www.amazon.com/s?ie=UTF8&me=A3Q5WHNU5KU2IV&page=1" target="_blank">My Soap Box</a></li>
-				<li><a href="#">Contact Us</a></li>
-				<li><a href="#">About Us</a></li>
+				<li>
+					<button onclick="document.getElementById('id01').style.display='block'" style="width:auto; margin-top: 0;margin-bottom: 0; padding-bottom: 0; font-size: 1em" class="contactButton"><id="contactUs">Contact Us</id></button>
+					<div id="id01" class="modal">
+  						<form class="modal-content animate" action="/action_page.php" style="float: center; margin: 1em auto auto auto; max-width: 557px;">
+								<div class="container modal-box" style="float: center">
+									<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+									<fieldset>
+										<legend><h2>Contact Us</h2></legend>
+	      								<label><b>Name:</b></label>
+	      								<input type="text" placeholder="Enter Name" name="name" required>
+	      								
+	      								<label><b>Email:</b></label>
+	      								<input type="email" placeholder="Enter Email" name="email" required><br><br>
+										
+										<input type="checkbox" checked="checked"> Receive Email Updates<br><br>
+	     								
+	     								<label><b>Subject</b></label>
+	      								<input type="text" placeholder="Enter Subject" name="subject">
+	      								
+	      								<label><b>Content</b></label>
+	      								<input type="text" name="content">
+	      								
+	      								<div style="text-align: center">  
+	      									<button type="submit" class="submitButton">Submit</button>
+	      								</div>
+	      							</fieldset>
+	      						</div>
+      					</form>
+    				</div>
+    			</li>
+				<li><a href="./aboutUs.html">About Us</a></li>
 				<li><a href="./index.html">Home</a></li>
 			</ul>
 		</div>
 		
 		<div class="jumbotron jumbotron-fluid">
-			<div class="container">
+			<div class="container" style="float: left;">
 				<img id="logo" src="./img/logo.jpg">
 				<div class="containerWords">
 					<h1>NW Natural Soap</h1>
@@ -27,7 +56,7 @@
 				</div>
 			</div>
 		</div>
-
+		
 		<div class="mainau">
 			<h1>About Us</h1>
 			<p>Hi, <br><br> I’d like to tell you about the ‘us’ behind NW Natural Soap and how the company came about.</p>
