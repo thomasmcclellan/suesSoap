@@ -1,7 +1,7 @@
 /*Common elements*/
 body {
 	font-size: 1em;
-	font-family: Tahoma, serif;
+	font-family: serif;
 	background: #c4bbaa; 
 	padding: 0;
 	margin: 0;
@@ -78,7 +78,7 @@ ol li {
 	color: #efe8da;
 	background-color: #605d52;
 	font-weight: 300;
-	font-family: Tahoma, serif;
+	font-family: serif;
 }
 
 /*Jumbotron*/
@@ -113,7 +113,7 @@ ol li {
 .jumbotron p {
 	text-align: center;
 	color: #c6640d;
-	font-family: Tahoma, serif;
+	font-family: serif;
 	font-weight: 300;
 	text-transform: uppercase;
 }
@@ -143,6 +143,22 @@ ol li {
 	max-width: 350px;
 	min-height: 444px;
 
+}
+
+.mainau {
+	border: 0.25em solid #4c4941;
+	border-radius: 0.25em;
+	background-color: #efe8da;
+	box-shadow: 2px 2px 2px #777;
+	text-align: left;
+	position: relative;
+	margin: 2em;
+	padding: 1em;
+}
+
+.mainau h1 {
+	text-align: center;
+	font-family: Ubuntu, Geneva, sans-serif;
 }
 
 button.accordion {
@@ -183,7 +199,7 @@ div.panel {
 	background-color: #efe8da;
 	color: #4c4941;
 	font-size: 1em;
-	font-family: Tahoma, serif;
+	font-family: serif;
 	max-height: 0;
 	overflow: hidden;
 	transition: max-height 0.2s ease-out;
@@ -251,7 +267,7 @@ legend {
 	margin: 0 0 1.0em 0;
 	background-color: #4c4941;
 	height: 25px;
-	font-family: Tahoma, serif;
+	font-family: serif;
 	font-size: 1em;
 	color: #c4bbaa;
 	width: 100%;
@@ -290,7 +306,7 @@ legend {
 	color: #efe8da;
 	background-color: #605d52;
 	font-weight: 300;
-	font-family: Tahoma, serif;
+	font-family: serif;
 }
 
 .footer ul li:before {
