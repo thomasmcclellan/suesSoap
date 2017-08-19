@@ -46,7 +46,7 @@ ol li {
 .nav {
 	font-size: 1.15em;
 	letter-spacing: 0.04em;
-	padding: 0.5em 1.25em 0 0;
+	padding: 0.25em .25em 0 0;
 	margin: 0 0 1.0em 0;
 	float: right;
 	max-width: 1110px;
@@ -98,8 +98,22 @@ ol li {
 	border-radius: 0.25em;
 	background-color: #efe8da;
 	position: relative;
-	min-width: 307px;
+	min-width: 481px;
 
+}
+
+.containerWords {
+	float: right;
+	margin-left: 5px;
+}
+
+#logo {
+	border: 0.25em solid #4c4941;
+	border-radius: 0.25em;
+	box-shadow: 2px 2px 2px #777;
+	float: left;
+	max-width: 140px;
+	margin: 5px;
 }
 
 .jumbotron h1 {
@@ -124,9 +138,9 @@ ol li {
 }
 
 .main-body {
-	width: 80%;
+	/*width: 80%;
 	float: right;
-	min-width: 460px;
+	min-width: 460px;*/
 }
 
 .main-1, .main-2, .main-3, .main-4 {
@@ -239,11 +253,7 @@ section#sidebar {
 	position: relative;
 }
 
-#logo {
-	border: 0.25em solid #4c4941;
-	border-radius: 0.25em;
-	box-shadow: 2px 2px 2px #777;
-}
+
 
 .contact {
 	min-width: 156px;
